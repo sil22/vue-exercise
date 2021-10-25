@@ -1,0 +1,40 @@
+Brief explanation of Binance App creation
+1. Steps to setup the project
+# install dependencies
+$ npm install
+
+# serve at localhost:3000
+$ npm run dev
+
+2. Project Stucture
+The project structure created was following the structure the Nuxt js suggests. Having the components, 
+layouts, pages, static and store folder. 
+
+In the Components folder the UI components were included. In this case, the card and the table used to show the coins data.
+
+In Layouts folder, were included the components that will be reused in the diferent pages, and the full-layout that includes
+the Header and Footer and Nuxt tag, where the content is injected depending on the routes of each component. 
+
+In Pages folder there is the index file that is the first page showed in Binance App, let's say the Home Page, containing the Table component,and 
+also there are declared the mapGetteres and mapActions to fetch the coins data from the store.
+
+Store has the state of the app, the getters, mutations and actions. In actions is where we connect with the API, 
+and get all the coins given. The index file is nedeed to active the store in Nuxt. 
+
+Static folder is where we have the coins we are interested to show.
+
+3. App Decisions 
+- Vuetify was imported to give the project a kindly view and to show the coins table and the coin details. 
+- The UI components are Table.js and Card.js that can be reused across the project.
+- _coin.vue is the compenent to show the selected Coin and its data.
+- To route to pages, the $route.push was used, sending as parameters the name that Nuxt creates in the router.js file. 
+
+4. App Functionality 
+In the Binance App you will see the listed coins 'BTCUSDT', 'ETHUSDT', 'ADAUSDT', 'LTCUSDT', 'AXSUSDT', 'BNBUSDT' in the Home page,
+you will be able to Order by: weightedAvgPrice, volume, and most recently visited, Search the coins by name and click the coin you 
+would like to see in more detail. 
+In addition, there is a button "Refresh Values" to manually refresh the coins values, also there is a timer to update 
+the coins values every 10 seconds and will show an alert on the right top where you can close by clicking on "Close" button. 
+
+To search any coin, its necessary to search in capital letters, then you can click on the coin row and will redirect to the _coin page. 
+There you will see the whole coin data, such as: highPrice, lowPrice, openPrice, askPrice and bidPrice.
