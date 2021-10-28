@@ -19,7 +19,7 @@ In Pages folder there is the index file that is the first page showed in Binance
 also there are declared the mapGetteres and mapActions to fetch the coins data from the store.
 
 Store has the state of the app, the getters, mutations and actions. In actions is where we connect with the API, 
-and get all the coins given. The index file is nedeed to active the store in Nuxt. 
+and get all the coins given. 
 
 Static folder is where we have the coins we are interested to show.
 

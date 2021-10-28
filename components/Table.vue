@@ -12,20 +12,18 @@
       <template v-slot:top>
         <v-text-field
           v-model="search"
-          label="Search (UPPER CASE ONLY)"
+          label="Search coin.."
           class="mx-4"
         ></v-text-field>
-      </template>     
+      </template>
     </v-data-table>
-  
   </div>
 </template>
 
 <script>
-
 export default {
   props: {
-    coins: Array,
+    coins: Array
   },
   data() {
     return {
@@ -48,10 +46,9 @@ export default {
           sortable: false
         },
         { text: "Weighted Avg Price", value: "weightedAvgPrice" },
-        { text: "Volume", value: "volume"},
+        { text: "Volume", value: "volume" },
         { text: "Price change", value: "priceChange", sortable: false },
         { text: "Recently visited", value: "closeTime", sortable: true }
-
       ];
     }
   },
@@ -64,13 +61,17 @@ export default {
         value
           .toString()
           .toLocaleUpperCase()
-          .indexOf(search) !== -1
+
+          .indexOf(search.toLocaleUpperCase()) !== -1
       );
     },
     handleClick(event) {
-        this.$router.push({ name: 'details-coin', params: { coin: event.symbol } });
-        event['visited'] = new Date()
+      this.$router.push({
+        name: "details-coin",
+        params: { coin: event.symbol }
+      });
+      event["visited"] = new Date();
     }
-  }
+  } 
 };
 </script>

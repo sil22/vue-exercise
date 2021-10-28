@@ -2,7 +2,7 @@
   <div>
     <Header title="$ BINANCE APP $" />
     <Nuxt /> 
-    <Footer title="copyright 2020" />
+    <Footer />
   </div>
 </template>
 <script>

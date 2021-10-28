@@ -16,9 +16,9 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: "stylesheet", type: "text/css", href: "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css' }
     ]
-    
+
   },
 
   script: [
@@ -26,7 +26,7 @@ export default {
     { src: 'https://code.jquery.com/jquery-3.3.1.slim.min.js' },
     { src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js' }
   ],
-  
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
@@ -41,13 +41,13 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    //'@nuxtjs/eslint-module'
-        // Simple usage
-        '@nuxtjs/vuetify',
+    '@nuxtjs/eslint-module',
+    // Simple usage
+    '@nuxtjs/vuetify',
 
-        // With options
-        ['@nuxtjs/vuetify', { /* module options */ }]
-  ], 
+    // With options
+    ['@nuxtjs/vuetify', { /* module options */ }]
+  ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

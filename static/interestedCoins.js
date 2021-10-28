@@ -1,4 +1,4 @@
 export const interestedCoins = [
-    'BTCUSDT', 'ETHUSDT', 'ADAUSDT',
-    'LTCUSDT', 'AXSUSDT', 'BNBUSDT'
+  'BTCUSDT', 'ETHUSDT', 'ADAUSDT',
+  'LTCUSDT', 'AXSUSDT', 'BNBUSDT'
 ]
